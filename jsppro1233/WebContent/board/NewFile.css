@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+	font-family: 'Nanum Gothic';
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:#bbbbbb;
+	cursor:pointer;
+}
+.navbar-default .navbar-nav > .active >a,
+.navbar-default .navbar-nav > .active >a:hover,
+.navbar-default .navbar-nav > .active >a:focus{
+	color:blue;
+	background-color:#000000;
+}
+
+/* #logo{ text-align: center;}
+#logo h1 span{
+	color: purple;
+}
+#content {
+	text-align: center;
+}
+#member span{
+	color: red;
+}
+ */
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -50%; }
+45% { left: -50%; }
+50% { left: -100%; }
+70% { left: -100%; }
+75% { left: -150%; }
+95% { left: -150%; }
+100% { left: 0%; }
+}
+div#slider { 
+	overflow: hidden; 
+}
+div#slider figure img { 
+	width: 10%; 
+	float: left; 
+}
+div#slider figure { 
+position: relative;
+width: 500%;
+
+margin:0;
+top:0;
+left: 0;
+text-align: left;
+font-size: 0;
+-webkit-animation: 20s slidy ease-in-out infinite;
+animation: 20s slidy ease-in-out infinite; 
+}
+
+
+
+
+
+
+
